@@ -13,7 +13,7 @@ function Item (props) {
           id={itemHash}
           className="feature__option"
           name={slugify(props.feature)}
-          checked={item.name === props.selection[props.feature].name}
+          checked={item.name === props.theState[props.feature].name}
           onChange={e => props.updateFeatures(props.feature, item)}
         />
         <label htmlFor={itemHash} className="feature__label">
